@@ -157,7 +157,52 @@ Open it and replace:
 
 ---
 
-## Step 4: Populate Your Vault
+## Step 4: (Optional) Visualise Your Vault in Obsidian
+
+[Obsidian](https://obsidian.md/) is a free, open-source note-taking app that can open your vault as a local folder and display it as an interactive knowledge graph. It's entirely optional, but it makes the vault feel much more alive — you can see how your notes connect, spot gaps, and browse everything without an AI.
+
+### 4-1: Clone your vault to your computer
+
+Open your terminal and run:
+
+```bash
+git clone https://github.com/[YOUR_GITHUB_USERNAME]/[YOUR_REPO_NAME].git
+```
+
+This creates a local copy of your vault on your computer.
+
+### 4-2: Open in Obsidian
+
+1. Download Obsidian from [obsidian.md](https://obsidian.md/) — it's free and runs on Mac, Windows, Linux, iOS, and Android
+2. Open Obsidian → click **Open folder as vault**
+3. Select the folder you just cloned
+4. Press `Ctrl/Cmd + G` to open **Graph View** — you'll see all your notes as connected nodes
+
+### 4-3: Keep Obsidian in sync with GitHub
+
+Your AI tools write to GitHub. To see those changes in Obsidian, pull the latest version:
+
+```bash
+# Navigate to your vault folder first
+cd [YOUR_REPO_NAME]
+
+# Pull the latest changes from GitHub (made by AI tools)
+git pull origin main
+```
+
+If you also edit notes locally in Obsidian and want to push them back to GitHub:
+
+```bash
+git add .
+git commit -m "local edits from Obsidian"
+git push origin main
+```
+
+**Tip:** Install the **Obsidian Git** community plugin (free, inside Obsidian → Settings → Community plugins) to automate this. It can auto-pull and auto-push on a schedule, so syncing becomes invisible.
+
+---
+
+## Step 5: Populate Your Vault
 
 Start by writing a few hub files. You don't need everything at once — the vault grows over time. A good first session:
 
