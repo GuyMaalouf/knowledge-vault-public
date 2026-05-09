@@ -2,6 +2,8 @@
 
 > A topic-organised, graph-structured knowledge base that gives ChatGPT, Claude, and other AI tools a shared, persistent, navigable memory — stored on GitHub, visualised in Obsidian, and owned entirely by you.
 
+![Knowledge Vault](./assets/knowledge-vault-graphic.png)
+
 ---
 
 ## What Is the Knowledge Vault?
@@ -77,8 +79,6 @@ These work in **Claude** (via project skill files) and **ChatGPT** (via project 
 One of the best parts of this system is that you can **see it**. [Obsidian](https://obsidian.md/) is a free, open-source note-taking app that reads your vault as a local folder and renders all your notes as an **interactive graph** — nodes connected by links, clustered by topic.
 
 This makes your knowledge feel tangible. You can see which projects are densely connected, which topics are isolated, and where the gaps are — all at a glance. It's also a great way to browse and navigate notes locally, independent of any AI tool.
-
-**How to open your vault in Obsidian:**
 1. Download Obsidian from [obsidian.md](https://obsidian.md/) (free — Mac, Windows, Linux, iOS, Android)
 2. Clone your vault repo to your computer (see [SETUP.md](./SETUP.md) for the git commands)
 3. In Obsidian: **Open folder as vault** → select your cloned repo folder
